@@ -283,7 +283,7 @@ label #closeMenu{
     padding: 15px 0px;
     margin: 20px;
 }
-.iconSoft{
+.softSkills i{
     color: #D97F81;
     font-size: 50px;
     margin-bottom: 20px;
@@ -385,9 +385,36 @@ label #closeMenu{
 }
 /* carrousel de imagens */
 .carousel{
-    background-color: #D97F81;
-    margin-left: 100px;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
 }
+.carousel a span{
+    text-decoration: none;
+    background-color: transparent;
+
+}
+.carousel a span i{
+    color: white;
+    font-size: 30px;
+}
+.carousel a:hover{
+    text-decoration: none;
+}
+.carousel a h5{
+    color: #ffffff;
+}
+.carousel a h5:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.carousel p{
+    color: rgba(255, 255, 255, 0.61);
+    width: 100%;
+}
+
 
 /* ------------Contato */
 /* Formulário de contato */
@@ -484,6 +511,7 @@ label #closeMenu{
     .boxAzulEscuro{
         width: 72%;
     }
+
 /* ------------Habilidades */
     /* Abas do menu */
     .conteudosAbas{
@@ -516,7 +544,7 @@ label #closeMenu{
     /* ------------Sobre mim */
     .sobreMim{
         background-color: #478CA2;
-        height: 320px;
+        height: 360px;
         padding: 0;
     }
     .boxAzul{
@@ -539,6 +567,7 @@ label #closeMenu{
     }
     .txtSobre h1{
         font-size: 30px;
+        margin-top: 50px;
     }
     .txtSobre p{
         font-size: 14px;
@@ -654,7 +683,7 @@ label #closeMenu{
 @media screen and (max-width:500px){
     /* ------------Sobre mim */
     .sobreMim{
-        height: 350px;
+        height: 430px;
     }
     /* ------------Habiliades */
     #hard{
