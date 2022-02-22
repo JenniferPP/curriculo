@@ -6,7 +6,7 @@
     padding: 0;
     font-family: 'Varela Round', sans-serif;
     scroll-behavior: smooth;
-    animation: fadeIn 1s linear
+    animation: fadeIn 0.8s linear;
 }
 @keyframes fadeIn {
     0%{opacity: 0;
@@ -23,6 +23,9 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {   
     background-color: #5BB7D4;
     border-radius: 20px;   
+}
+body::-webkit-scrollbar-track{
+    background-color: rgb(240, 240, 240);
 }
 
 /* ------------Menu sidebar */
@@ -234,6 +237,7 @@ label #closeMenu{
 .menuAbas{
     margin-top: 100px;
     z-index: -999;
+    height: 500px;
 }
 .menuAbas ul li{
     text-align: center;
@@ -249,9 +253,10 @@ label #closeMenu{
     color: #D97F81;
     text-decoration: none;
 }
-.nav-tabs li a:visited  {
+.nav-tabs li a.active  {
     color: #D97F81;
     border-bottom: 2px solid #D97F81  ;
+    transition: all 0.5s;
 }
 .conteudosAbas{
     text-align: center;
@@ -266,7 +271,7 @@ label #closeMenu{
     padding-left: 25%;
     animation: go-down 2s;
 }
-/* @keyframes go-down {
+ @keyframes go-down {
     from{
         transform: translatey(-25px);
         opacity: 0;
@@ -275,7 +280,7 @@ label #closeMenu{
         transform: translatey(0);
         opacity: 100%;
     }
-} */
+}
 .softSkills{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 20px;
@@ -320,7 +325,7 @@ label #closeMenu{
     width: 90%;
 }
 .pereCss{
-    width: 80%;
+    width: 65%;
 }
 .perJs{
     width: 40%;
@@ -333,6 +338,9 @@ label #closeMenu{
 }
 .perVideo{
     width: 30%;
+}
+.perIng{
+    width: 80%;
 }
  @keyframes progress-animation {
     0% {width: 0%;}
@@ -582,6 +590,11 @@ label #closeMenu{
     }
     /* ------------Habiliades */
     /* Abas do menu */
+    .menuAbas{
+        margin-top: 100px;
+        z-index: -999;
+        height: auto;
+    }
     .conteudosAbas{
         padding: 0;
     }
