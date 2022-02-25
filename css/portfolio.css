@@ -202,30 +202,25 @@ label #closeMenu{
 }
 
 /* carousel */
-.carousel-port{
-    padding: 0 50px;
-}
 .swiper{
-    /* background-color: #D97F81; */
     width: 95%;
-    height: 100%;
 }
 .swiper-wrapper{
     padding: 10px 0px;
 }
+
 .swiper-slide{
-    /* background-color: aqua; */
-    height: 420px;
+    height: 430px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
     position: relative;
+    margin-right: 30px;
 }
-.swiper-slide .imagem{
+.swiper-slide .imagem {
     height: 180px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-
 }
 .swiper-slide .imagem img{
     height: 180px;
@@ -240,6 +235,7 @@ label #closeMenu{
     align-items: center;
     text-align: center;
     color: #797979;
+    padding: 0 5px;
 }
 .swiper-slide .text .project p{
     font-size: 20px;
@@ -268,6 +264,7 @@ label #closeMenu{
     color: #4d4d4d;
     border: 2px solid #4d4d4d;
 }
+
 .linha{
     justify-items: center;
     margin: 50px 0 120px 0;
@@ -280,9 +277,29 @@ label #closeMenu{
     width: 95%;
     height: 3px;
     background-color: #e9e9e9;
-
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    width: 25px;
+    height: 7px;
+    border-radius: 25px;
+    color: #ccc;
+    background-color: #D97F81;
 }
 /* Branding */
 #branding{
     margin-top: 150px;
 }
+/* RESPONSIVIDADE */
+@media screen and (max-width:880px){
+    .welcome{
+        padding: 45px 0;
+    }
+    .welcome h1{
+        color: #478CA2;
+        font-size: 40px;
+    }
+}
+
+
+
+
