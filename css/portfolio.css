@@ -299,6 +299,12 @@ label #closeMenu{
         font-size: 40px;
     }
 }
+@media screen and (max-width:470px) {
+    .welcome h1{
+        color: #478CA2;
+        font-size: 30px;
+    }
+}
 
 
 

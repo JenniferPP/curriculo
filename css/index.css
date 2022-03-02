@@ -183,7 +183,6 @@ label #closeMenu{
     height: 650px;
 }
 .boxAzul{
-    /* width: 320px;*/
     height: 330px;
     width: 30%;
     background-color: #5BB7D4;
@@ -191,8 +190,7 @@ label #closeMenu{
     box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .boxAzulEscuro{
-    /* width: 700px; */
-    width: 65%;
+    width: 70%;
     height: 490px;
     background-color: #478CA2;
     border-radius: 15px;
@@ -514,21 +512,7 @@ label #closeMenu{
 
 /* RESPONSIVIDADE */
 
-@media screen and (max-width:1170px){
-    /* ------------Sobre mim */
-    .boxAzulEscuro{
-        width: 72%;
-    }
-
-/* ------------Habilidades */
-    /* Abas do menu */
-    .conteudosAbas{
-        text-align: center;
-        padding: 20px 0 0 10%;
-    }
-}
-
-@media screen and (max-width:1011px){
+@media screen and (max-width:1100px){
     /* ------------Sobre mim */
     .sobreMim{
         background-color: #F3F3F3;
@@ -641,10 +625,7 @@ label #closeMenu{
     }
     /* carrousel de imagens */
     .carousel{
-        margin-left: 0;
-        box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        border-radius: 10px;
-        margin-left:15px ;
+        margin-left: 8px;      
     }
 
     /* ------------Contato */
@@ -656,7 +637,7 @@ label #closeMenu{
         float: none;
         padding: 70px 40px;
         width: 100%;
-        margin: -680px 0 0 0;
+        margin: -780px 0 0 0;
     }
     .formCont form button{
         background-color: #D97F81;
@@ -668,7 +649,6 @@ label #closeMenu{
         margin-left: 0;
         text-align: center;
         margin-right: 0;
-        
     }
     .txtCont h2{
         font-size: 40px;
@@ -676,7 +656,7 @@ label #closeMenu{
     .contatos{
         text-align: left;
         font-size: 20px;
-        margin-top: 115%;
+        margin-top: 100%;
     }
     .contatos a{
         color: #707070;
@@ -693,7 +673,7 @@ label #closeMenu{
 
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     /* ------------Sobre mim */
     .sobreMim{
         height: 430px;
@@ -712,24 +692,35 @@ label #closeMenu{
     }
     /* ------------Contato */
     /* Formulário de contato */
+    .cont{
+        height: 200px;
+    }
     .formCont{
-        margin: -720 0 0 0;
+        margin: 0;
+        display: none;
     }
     /* Contatos Whats e Email */
     .contatos{
-        text-align: left;
-        font-size: 20px;
-        margin-top: 135%;
+        margin: -25px 0 0 0;
+    }
+    .txtCont h2{
+        font-size: 33px;
+    }
+    .contatos a{
+        background-color: none;
+        color: white;
+    }
+    .contatos a:hover{
+        background-color: #D97F81;
+        color: white;
     }
     .contatos .emailCont{
-        margin-top: -63px;
-    }
-    .contatos .iconCont{
-        display: none;
+        float: left;
+        margin: -15px 0;
     }
 }
 
-@media screen and (max-width:436px){
+@media screen and (max-width:470px){
     /* ------------Portfólio */
     .azulPort{
         height: 430px;
@@ -738,22 +729,11 @@ label #closeMenu{
         height: 430px;
         margin-top: -400px;
     }
-    /* ------------Contato */
-    /* Formulário de contato */
-    .formCont{
-        margin: -720 0 0 0;
-    }
     /* Contatos Whats e Email */
     .contatos{
-        text-align: left;
         font-size: 12px;
-        margin-top: 135%;
     }
     .contatos a{
         padding: 0;
     }
-    .contatos .emailCont{
-        margin-top: -45px;
-    }
-
 }
