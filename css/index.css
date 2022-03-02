@@ -728,3 +728,32 @@ label #closeMenu{
         display: none;
     }
 }
+
+@media screen and (max-width:436px){
+    /* ------------Portfólio */
+    .azulPort{
+        height: 430px;
+    }
+    .txtPort{
+        height: 430px;
+        margin-top: -400px;
+    }
+    /* ------------Contato */
+    /* Formulário de contato */
+    .formCont{
+        margin: -720 0 0 0;
+    }
+    /* Contatos Whats e Email */
+    .contatos{
+        text-align: left;
+        font-size: 12px;
+        margin-top: 135%;
+    }
+    .contatos a{
+        padding: 0;
+    }
+    .contatos .emailCont{
+        margin-top: -45px;
+    }
+
+}
